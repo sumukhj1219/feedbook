@@ -48,7 +48,7 @@ export default function InputComponent() {
   
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 flex">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 flex bg-white bg-opacity-10">
         <FormField
           control={form.control}
           name="text"

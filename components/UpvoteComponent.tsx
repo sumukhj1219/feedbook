@@ -19,7 +19,7 @@ const UpvoteComponent = async () => {
 
     return (
         <div className="flex items-center justify-center">
-            <Card className="w-[300px] m-2">
+            <Card className="w-[300px] m-2 bg-transparent bg-opacity-20 bg-white shadow-xl">
                 <CardHeader>
                     <CardTitle className="flex items-center justify-center gap-2 text-lg font-bold">
                         Most Upvoted Messages <TrendingUp className="text-green-500" />
@@ -32,7 +32,7 @@ const UpvoteComponent = async () => {
                     {messages?.map((message) => (
                         <div
                             key={message.id}
-                            className="flex justify-between items-center p-3 bg-secondary rounded-lg shadow-sm"
+                            className="flex bg-transparent justify-between items-center p-3 shadow-xl rounded-lg "
                         >
                             <p className="flex-1 text-sm font-medium text-gray-800 truncate">
                                 {message.text}

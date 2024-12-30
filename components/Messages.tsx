@@ -25,11 +25,11 @@ const Messages = async () => {
     }
 
     return (
-        <div className="overflow-y-scroll scroll-m-2">
+        <div className="overflow-y-scroll">
             {messages.map((message) => (
                 <article
                     key={message.id}
-                    className="p-3 bg-muted m-2 rounded-xl flex flex-col mt-5"
+                    className="p-3 bg-transparent bg-opacity-20 bg-white m-2 rounded-xl flex flex-col mt-5"
                 >
                     <header className="flex justify-between items-center text-sm">
                         <div className="flex items-center justify-center">
